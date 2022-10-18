@@ -21,10 +21,43 @@ body {
   color: #000000;
   font-weight: 400;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .main-index {
   text-align: center;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tips-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.list-container {
+  width: 400px;
+}
+
+.inside-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
