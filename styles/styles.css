@@ -21,10 +21,34 @@ body {
   color: #000000;
   font-weight: 400;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .main-index {
   text-align: center;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.foto-container {
+  width: 800px;
+}
+
+.tips-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -59,7 +83,6 @@ body {
   background-color: #756157;
 }
 
-/*hero-блок*/
 .hero {
   background-image: url("../images/svg/hero-divider.svg"), url("../images/hero-background.jpg");
   background-position: center bottom, center;
@@ -75,8 +98,8 @@ body {
   background-color: #82b3d3;
 }
 
-/*доска преимуществ*/
 .advantages-item-wide {
+  display: flex;
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -92,7 +115,15 @@ body {
   color: #333333;
 }
 
+.advantages-item {
+  width: 400px;
+}
+
 .advantages-item-lightcyan {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.tips-item-lightcyan {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
