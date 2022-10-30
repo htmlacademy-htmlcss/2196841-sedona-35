@@ -11,12 +11,13 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo"><img class="logo" src="images/svg/sedona-logo.svg" width="140" height="70"
-              alt="Логотип города Седона."></a>
+          <a class="navigation-logo">
+            <img class="logo" src="images/svg/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона.">
+          </a>
           <!--левое меню-->
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="link navigation-link">Главная</a>
+              <a class="link navigation-link navigation-link-current">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="link navigation-link" href="https://en.wikipedia.org/wiki/Sedona,_Arizona">О Седоне</a>
@@ -27,22 +28,19 @@
           </ul>
           <!--правое меню-->
           <ul class="navigation-user-list">
-            <!--Поиск-->
             <li class="navigation-item">
               <a class="navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <!--Избранное-->
             <li class="navigation-item">
               <a class="navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <div class="favorites-circle">12</div>
               </a>
             </li>
-            <!--Кнопка "Хочу сюда!"-->
             <li class="navigation-item">
-              <a class="link navigation-user-button" href="#">Хочу сюда!</a>
+              <a class="link button-small navigation-user-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -115,7 +113,7 @@
           <h2 class="title search-title">Заинтересовались?</h2>
           <p class="subtitle search-subtitle">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="link hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
+          <a class="link button-big hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="subscribe">
@@ -123,8 +121,7 @@
           <p class="subtitle subscribe-subtitle">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Подписаться</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
-              required>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>

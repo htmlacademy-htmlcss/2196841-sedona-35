@@ -188,13 +188,13 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-/*Секция поиска*/
+/*Секция Поиск*/
 .search {
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
-/*Секция формы*/
+/*Секция Рассылка*/
 .subscribe {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -309,7 +309,8 @@ body {
   color: #333333;
 }
 
-.advantages-text-dark {
+.advantages-text-dark,
+.hotel-card-price {
   color: #333333;
   margin-top: 0;
   margin-bottom: 0;
@@ -352,7 +353,7 @@ body {
 }
 
 /*Оформление*/
-.navigation-user-button {
+.button-small {
   display: block;
   text-align: center;
   font-size: 16px;
@@ -360,22 +361,28 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.navigation-user-button {
   background-color: #756157;
   padding: 8px 34px;
   margin-top: 14px;
   margin-left: 20px;
 }
 
-.hotel-search-button {
+.button-big {
   display: block;
-  width: 276px;
-  margin: 0 auto;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.hotel-search-button {
+  width: 276px;
   color: #ffffff;
   background-color: #756157;
+  margin: 0 auto;
   padding: 8px 50px;
 }
 
@@ -407,4 +414,259 @@ body {
   line-height: 10px;
   color: #ffffff;
   text-align: center;
+}
+
+/*------Каталог------*/
+/*Хедер Фильтры поиска*/
+.search-filters {
+  background-image: url("../images/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #82b3d3;
+  padding: 30px 70px 70px;
+}
+
+/*Секция Результат поиска*/
+.search-results {
+  padding: 50px 70px 60px;
+}
+
+/*Секция Рассылка*/
+.subscribe-catalog {
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.search-results-header {
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto 160px;
+  column-gap: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.select-sorting-results {
+  min-width: 292;
+  height: 49px;
+}
+
+.view-list {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  column-gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.view-button-tile {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/svg/results-tile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+}
+
+.view-button-full {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/svg/results-full.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+}
+
+.view-button-list {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/svg/results-list.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+}
+
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-card {
+  width: 300px;
+  min-height: 398px;
+  display: grid;
+  grid-template-rows: 212px min-content 21px 36px 37px;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.hotel-card-link {
+  grid-column: 1 / -1;
+  display: block;
+}
+
+.hotel-card-type {
+  color: #333333;
+  margin: 0;
+}
+
+.hotel-card-price {
+  color: #333333;
+  text-align: right;
+  margin: 0;
+}
+
+.card-more-button {
+  background-color: #756157;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card-favorites-button {
+  background-color: #82b3d3;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card-infavorites-button {
+  background-color: #7db54f;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card-rating {
+  display: block;
+  text-align: center;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+.pagination {
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  column-gap: 8px;
+  padding: 0;
+  margin: 80px 0 0;
+  /*не смог разобраться почему не работает margin-top: 40px*/
+  list-style-type: none;
+}
+
+.pagination-item {
+  text-align: center;
+}
+
+.pagination-link {
+  width: 60px;
+  color: #ffffff;
+  background-color: #82b3d3;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+.pagination-current {
+  width: 60px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+.pagination-separator {
+  display: block;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+/*Типографика*/
+/*<h1> со страницы каталога*/
+.catalog-head {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+/*<h3> со страницы каталога*/
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*<p> со страницы каталога*/
+.subscribe-subtitle-catalog {
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 52px;
+}
+
+/*Оформление*/
+.star-rating-five {
+  width: 120px;
+  height: 37px;
+  background-image: url("../images/svg/star.svg");
+  background-repeat: repeat-x;
+  background-position: 0 center;
+  margin: 0;
+}
+
+.star-rating-four {
+  width: 96px;
+  height: 37px;
+  background-image: url("../images/svg/star.svg");
+  background-repeat: repeat-x;
+  background-position: 0 center;
+  margin: 0;
+}
+
+.star-rating-three {
+  width: 72px;
+  height: 37px;
+  background-image: url("../images/svg/star.svg");
+  background-repeat: repeat-x;
+  background-position: 0 center;
+  margin: 0;
+}
+
+.star-rating-two {
+  width: 48px;
+  height: 37px;
+  background-image: url("../images/svg/star.svg");
+  background-repeat: repeat-x;
+  background-position: 0 center;
+  margin: 0;
+}
+
+.star-rating-one {
+  width: 24px;
+  height: 37px;
+  background-image: url("../images/svg/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  margin: 0;
 }
