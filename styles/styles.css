@@ -260,16 +260,12 @@ body {
   width: 232px;
   border-radius: 0 4px 4px 0;
   border: 0;
-}
-
-.subscribe-button-text {
-  display: block;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  transform: scaleX(0.85);
 }
 
 /*Футер*/
@@ -961,11 +957,11 @@ body {
 
 .modal-field-text:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-field-text:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .modal-field-date {
