@@ -176,7 +176,7 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-close-">
+    <div class="modal-container modal-container-close">
       <div class="modal-window">
         <button class="modal-close-button modal-round-button modal-button-cursor" type="button">
           <span class="visually-hidden">Закрыть.</span>
@@ -213,7 +213,12 @@
                 <label class="modal-text-inner" for="children-number">
                   Дети:
                 </label>
-                <button class="tooltip-button modal-round-button modal-button-cursor" type="button"><span class="visually-hidden">Тултип.</span></button>
+
+                <span class="tooltip">
+                  <button class="tooltip-button modal-round-button modal-button-cursor" type="button" aria-labelledby="tooltip-label-date"><span class="visually-hidden">Тултип.</span></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+
               </span>
               <button class="field-button field-button-minus field-background modal-button-cursor" type="button"><span class="visually-hidden">Уменьшить число.</span></button>
               <input class="modal-field-text modal-field-number field-background" type="number" id="children-number" name="children-number" value="2">
