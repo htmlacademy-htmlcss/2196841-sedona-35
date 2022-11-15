@@ -90,15 +90,15 @@
           <ul class="tips-list">
             <li class="tips-item tips-item-housing tips-item-lightcyan">
               <h3 class="tips-title">Жильё</h3>
-              <p class="advantages-text-dark">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="advantages-text-dark">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </li>
             <li class="tips-item tips-item-food">
               <h3 class="tips-title">Еда</h3>
-              <p class="advantages-text-dark">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages-text-dark">Всегда заказывайте <br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="tips-item tips-item-souvenirs tips-item-lightcyan">
               <h3 class="tips-title">Сувениры</h3>
-              <p class="advantages-text-dark">Не только китайского, но и настоящего местного производства!</p>
+              <p class="advantages-text-dark">Не только китайского, <br>но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -115,8 +115,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Подписаться.</label>
             <input class="field-subscribe" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-            <button class="subscribe-button cyan-button" type="submit"><span
-                class="subscribe-button-text">Подписаться</span></button>
+            <button class="subscribe-button cyan-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -208,18 +207,23 @@
               <label class="modal-text" for="adults-number">
                 Взрослые:
               </label>
-              <button class="field-button field-button-minus field-background modal-button-cursor"><span class="visually-hidden">Уменьшить число.</span></button>
+              <button class="field-button field-button-minus field-background modal-button-cursor" type="button"><span class="visually-hidden">Уменьшить число.</span></button>
               <input class="modal-field-text modal-field-number field-background" type="number" id="adults-number" name="adults-number" value="2">
-              <button class="field-button field-button-plus field-background modal-button-cursor"><span class="visually-hidden">Увеличить число.</span></button>
+              <button class="field-button field-button-plus field-background modal-button-cursor" type="button"><span class="visually-hidden">Увеличить число.</span></button>
               <span class="modal-text">
                 <label class="modal-text-inner" for="children-number">
                   Дети:
                 </label>
-                <button class="tooltip-button modal-round-button modal-button-cursor" type="button"><span class="visually-hidden">Тултип.</span></button>
+
+                <span class="tooltip">
+                  <button class="tooltip-button modal-round-button modal-button-cursor" type="button" aria-labelledby="tooltip-label-date"><span class="visually-hidden">Тултип.</span></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+
               </span>
-              <button class="field-button field-button-minus field-background modal-button-cursor"><span class="visually-hidden">Уменьшить число.</span></button>
+              <button class="field-button field-button-minus field-background modal-button-cursor" type="button"><span class="visually-hidden">Уменьшить число.</span></button>
               <input class="modal-field-text modal-field-number field-background" type="number" id="children-number" name="children-number" value="2">
-              <button class="field-button field-button-plus field-background modal-button-cursor"><span class="visually-hidden">Увеличить число.</span></button>
+              <button class="field-button field-button-plus field-background modal-button-cursor" type="button"><span class="visually-hidden">Увеличить число.</span></button>
             </div>
             <button class="modal-button modal-button-cursor" type="submit">Найти</button>
           </form>

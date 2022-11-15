@@ -260,16 +260,12 @@ body {
   width: 232px;
   border-radius: 0 4px 4px 0;
   border: 0;
-}
-
-.subscribe-button-text {
-  display: block;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  transform: scaleX(0.85);
 }
 
 /*Футер*/
@@ -961,11 +957,11 @@ body {
 
 .modal-field-text:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-field-text:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .modal-field-date {
@@ -1055,8 +1051,8 @@ body {
 .tooltip-button {
   display: block;
   position: absolute;
-  top: 12px;
-  right: 45px;
+  top: 0;
+  right: 0;
   width: 26px;
   height: 26px;
   background-color: #83b3d3;
@@ -1104,4 +1100,44 @@ body {
 
 .modal-button-cursor {
   cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  width: 40px;
+  height: 26px;
+  margin: 0;
+}
+
+.tooltip-text {
+  width: 216px;
+  background-color: #333333;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 20px 18px 22px 22px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 40px;
+  right: -113px;
+  display: none;
+}
+
+.tooltip-button:hover + .tooltip-text,
+.tooltip-button:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::after {
+  content:'';
+  background-image: url("../images/svg/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  top: -9px;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
