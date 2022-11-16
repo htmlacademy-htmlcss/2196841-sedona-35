@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -113,15 +115,15 @@
           <p class="subtitle subtitle-subscribe subtitle-white">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Подписаться.</label>
-            <input class="field-subscribe" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-            <button class="subscribe-button cyan-button" type="submit">Подписаться</button>
+            <input class="field-subscribe text-input" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+            <button class="subscribe-button cyan-button text-input" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
 
       <footer class="page-footer">
         <section class="footer-social">
-          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <h2 class="visually-hidden">Мы в соцсетях.</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-link footer-social-icon" href="https://vk.com/htmlacademy">
@@ -164,7 +166,7 @@
         </section>
 
         <section class="footer-copyright">
-          <h2 class="visually-hidden">Сделано в .html academy</h2>
+          <h2 class="visually-hidden">Сделано в .html academy!</h2>
           <a class="link htmlacademy" href="https://htmlacademy.ru/">
             <svg aria-hidden="true" focusable="false" width="115" height="34" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
@@ -189,16 +191,16 @@
                 Дата Заезда:
               </label>
               <div class="field-modal-wrapper">
-                <input class="modal-field-text modal-field-date field-background" type="text" id="date-arrival" name="date-arrival" placeholder="27 апреля 2020">
+                <input class="modal-field-text modal-field-date field-background text-input" type="text" id="date-arrival" name="date-arrival" placeholder="27 апреля 2020" required>
               </div>
-              <span class="modal-help-text text-red">Мы не можем отправить вас в прошлое.</span>
+              <span class="modal-help-text error-message">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="field-dates-group">
               <label class="modal-text" for="date-departure">
                 Дата Выезда:
               </label>
               <div class="field-modal-wrapper">
-                <input class="modal-field-text modal-field-date field-background" type="text" id="date-departure" name="date-departure" placeholder="1 сентября 2023">
+                <input class="modal-field-text modal-field-date field-background text-input" type="text" id="date-departure" name="date-departure" placeholder="1 сентября 2023" required>
               </div>
               <span class="modal-help-text text-dark">На эти даты есть свободные номера. Пока есть.</span>
             </div>
@@ -207,7 +209,7 @@
                 Взрослые:
               </label>
               <button class="field-button field-button-minus field-background modal-button-cursor" type="button"><span class="visually-hidden">Уменьшить число.</span></button>
-              <input class="modal-field-text modal-field-number field-background" type="number" id="adults-number" name="adults-number" value="2">
+              <input class="modal-field-text modal-field-number field-background text-input" type="number" id="adults-number" name="adults-number" value="2" required>
               <button class="field-button field-button-plus field-background modal-button-cursor" type="button"><span class="visually-hidden">Увеличить число.</span></button>
               <span class="modal-text">
                 <label class="modal-text-inner" for="children-number">
@@ -221,10 +223,10 @@
 
               </span>
               <button class="field-button field-button-minus field-background modal-button-cursor" type="button"><span class="visually-hidden">Уменьшить число.</span></button>
-              <input class="modal-field-text modal-field-number field-background" type="number" id="children-number" name="children-number" value="2">
+              <input class="modal-field-text modal-field-number field-background text-input" type="number" id="children-number" name="children-number" value="2" required>
               <button class="field-button field-button-plus field-background modal-button-cursor" type="button"><span class="visually-hidden">Увеличить число.</span></button>
             </div>
-            <button class="modal-button modal-button-cursor" type="submit">Найти</button>
+            <button class="modal-button modal-button-cursor text-input" type="submit">Найти</button>
           </form>
         </section>
       </div>

@@ -29,6 +29,11 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -219,7 +224,7 @@ body {
   margin-bottom: 30px;
   left: 85px;
   background-color: rgba(0, 0, 0, 0.3);
-  }
+}
 
 /*Секция Поиск*/
 .search {
@@ -230,14 +235,14 @@ body {
 .subscribe {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #82b3d3;
   padding: 96px 258px 104px;
 }
 
 .subscribe-form {
   display: flex;
-  height: 52px;
+  min-height: 52px;
   margin: 0 auto;
 }
 
@@ -260,7 +265,6 @@ body {
   width: 232px;
   border-radius: 0 4px 4px 0;
   border: 0;
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
@@ -305,6 +309,10 @@ body {
 }
 
 /*Типографика*/
+.text-input {
+  font-family: "PT Sans", sans-serif;
+}
+
 /*навигация в хедере*/
 .navigation-link {
   display: block;
@@ -400,10 +408,6 @@ body {
 
 .text-dark {
   color: #333333;
-}
-
-.text-red {
-  color: #ff5757;
 }
 
 .navigation-item {
@@ -555,7 +559,7 @@ body {
 }
 
 .brown-button:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .cyan-button {
@@ -573,7 +577,7 @@ body {
 }
 
 .cyan-button:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-infavorites-button {
@@ -591,7 +595,7 @@ body {
 }
 
 .card-infavorites-button:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*------Каталог------*/
@@ -600,7 +604,7 @@ body {
   min-height: 304px;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #82b3d3;
   padding: 35px 70px 70px;
 }
@@ -665,6 +669,8 @@ body {
 .select-sorting-results {
   min-width: 292px;
   height: 48px;
+  font-size: 18px;
+  line-height: 21px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -682,7 +688,7 @@ body {
 .view-list {
   display: grid;
   grid-template-columns: repeat(3, 48px);
-  column-gap: 8px;
+  gap: 8px;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -705,7 +711,7 @@ body {
   width: 300px;
   min-height: 398px;
   display: grid;
-  grid-template-rows: 212px min-content 21px 36px 37px;
+  grid-template-rows: 212px repeat(4, min-content);
   grid-template-columns: 140px 140px;
   row-gap: 16px;
   column-gap: 20px;
@@ -730,6 +736,11 @@ body {
   margin: 0;
 }
 
+.hotel-card-type,
+.hotel-card-price {
+  min-height: 21px;
+}
+
 .card-rating {
   display: block;
   text-align: center;
@@ -747,19 +758,22 @@ body {
 /*Пагинация*/
 .pagination {
   display: grid;
-  grid-template-columns: repeat(6, 60px);
-  column-gap: 8px;
+  grid-template-columns: repeat(6, auto);
+  width: 400px;
+  gap: 8px;
   padding: 0;
   margin: 40px 0 0;
   list-style-type: none;
 }
 
 .pagination-item {
+  min-width: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
 }
 
 .pagination-link {
-  width: 60px;
   color: #ffffff;
   margin: 0 auto;
   padding-top: 11px;
@@ -767,7 +781,6 @@ body {
 }
 
 .pagination-current {
-  width: 60px;
   background-color: #f2f2f2;
   margin: 0 auto;
   padding-top: 11px;
@@ -893,7 +906,7 @@ body {
 .modal-window {
   position: relative;
   margin: auto;
-  min-width: 577px;
+  width: 577px;
   background-color: #ffffff;
   border-radius: 30px;
   padding: 64px 70px;
@@ -951,19 +964,6 @@ body {
   border: 0;
 }
 
-.modal-field-text:hover {
-  background-color: #e6e6e6;
-}
-
-.modal-field-text:focus {
-  background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
-}
-
-.modal-field-text:active {
-  outline: 2px solid #000000;
-}
-
 .modal-field-date {
   line-height: 24px;
   border-radius: 4px;
@@ -998,6 +998,10 @@ body {
   margin: 0;
 }
 
+.error-message {
+  color: #ff5757;
+}
+
 .field-people-group {
   display: grid;
   grid-template-columns: auto 40px 31px 40px auto 40px 31px 40px;
@@ -1008,15 +1012,18 @@ body {
 .modal-field-number {
   display: block;
   line-height: 20px;
-  width: 31px;
+  /*width: 31px;*/
   padding: 14px 10px;
   appearance: none;
   -moz-appearance: textfield;
+
+  min-width: 11px;
+
 }
 
 .modal-field-number::-webkit-outer-spin-button,
 .modal-field-number::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .modal-field-number:hover,
@@ -1089,11 +1096,24 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.modal-field-text:hover,
 .modal-close-button:hover,
+.field-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-field-text:focus,
 .modal-close-button:focus,
+.field-button:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-field-text:active {
+  outline: 2px solid #000000;
+}
+
 .modal-close-button:active,
-.field-button:hover,
-.field-button:focus,
 .field-button:active {
   background-color: #e6e6e6;
 }
@@ -1130,14 +1150,14 @@ body {
 }
 
 .tooltip-text::after {
-  content:'';
+  content: "";
   background-image: url("../images/svg/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   top: -9px;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
